@@ -1,11 +1,3 @@
-/*
-
-Tooplate 2122 Nano Folio
-
-https://www.tooplate.com/view/2122-nano-folio
-
-*/
-
 html {
     overflow-x: hidden;
 }
@@ -30,14 +22,20 @@ a:hover {
 }
 
 .tm-about-text a {
-    color: #9F6;
+    color: #FF6887;
+}
+
+.tm-about-text>p {
+    color: #112A46;
+}
+
+input {
+    color: #040019;
 }
 
 h1,
 h2,
-p,
 i,
-address,
 .tm-text-white {
     color: white;
 }
@@ -48,11 +46,6 @@ address,
 
 .tm-link-white {
     color: white;
-}
-
-.tm-footer {
-    color: #999999;
-    text-align: center;
 }
 
 .tm-container-fluid {
@@ -128,7 +121,7 @@ textarea {
     background: transparent;
     border: 0;
     border-bottom: 1px solid white;
-    color: white;
+    color: #031B38;
     padding: 15px 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -156,11 +149,13 @@ textarea {
 
 .tm-btn-submit {
     background: none;
-    color: white;
-    font-size: 1rem;
-    border: 0;
+    color: #040019;
+    font-size: 1.5rem;
+    border: 4px solid white;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    border-radius: 7px;
 }
 
 .tm-btn-submit:hover {
@@ -171,15 +166,16 @@ textarea {
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    background-color: white;
+    // background-color: #FEC2CE;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .tm-social-link i {
-    color: #99CCCC;
+    color: white;
     transition: all 0.3s ease;
+    font-size: 2.5rem;
 }
 
 .tm-social-link:hover i.fa-facebook {
@@ -194,55 +190,15 @@ textarea {
     color: #3f729b;
 }
 
+.tm-social-link:hover i.fa-solid {
+    color: rgb(251, 240, 147);
+}
+
 .tm-flex {
     display: flex;
+    justify-content: space-between;
 }
 
-address {
-    font-style: normal;
-}
-
-.filters-button-group {
-    text-align: right;
-    padding: 0;
-    margin: 0;
-}
-
-.filters-button-group li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 40px;
-}
-
-.filters-button-group li a.active {
-    color: #F96699;
-}
-
-.tm-gallery {
-    margin: -10px;
-}
-
-.tm-gallery-item {
-    border-radius: 12px;
-    margin: 10px;
-    overflow: hidden;
-}
-
-.tm-gallery-item a {
-    display: block;
-    line-height: 0;
-}
-
-.tm-gallery-item img {
-    width: 220px;
-    height: 220px;
-}
-
-@media (max-width: 940px) {
-    .filters-button-group {
-        text-align: left;
-    }
-}
 
 @media (max-width: 680px) {
     .tm-contact {
@@ -267,19 +223,6 @@ address {
 @media (max-width: 545px) {
     .tm-about {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 489px) {
-    .tm-gallery-item {
-        width: 48%;
-        margin: 1%;
-        height: auto;
-    }
-
-    .tm-gallery-item img {
-        width: 100%;
-        height: auto;
     }
 }
 
@@ -308,15 +251,15 @@ address {
 }
 
 .tm-bgcolor-1 {
-    background-color: #F96699;
+    background-color: rgb(246, 119, 150);
 }
 
 .tm-bgcolor-2 {
-    background-color: #38CCCC;
+    background-color: #fef38d;
 }
 
 .tm-bgcolor-3 {
-    background-color: #99CCCC;
+    background-color: #FFAE8A;
 }
 
 .tm-border-rounded {
@@ -371,10 +314,6 @@ address {
 
 .img-box:hover img {
     transform: scale(1.1);
-}
-
-.img-box:hover .transparent-box {
-    // background-color: rgba(0, 0, 0, 0.5);
 }
 
 .img-box:hover .caption {
