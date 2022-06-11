@@ -283,8 +283,8 @@ textarea {
   font-size: 2.5rem;
 }
 
-.tm-social-link:hover i.fa-facebook {
-  color: #3b5998;
+.tm-social-link:hover i.fa-patreon {
+  color: #AD8AFF;
 }
 
 .tm-social-link:hover i.fa-twitter {
@@ -292,7 +292,7 @@ textarea {
 }
 
 .tm-social-link:hover i.fa-instagram {
-  color: #3f729b;
+  color: #8BBDFE;
 }
 
 .tm-social-link:hover i.fa-solid {
@@ -328,7 +328,7 @@ textarea {
     margin-bottom: 20px;
   }
   .tm-contact-info {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 }
 
