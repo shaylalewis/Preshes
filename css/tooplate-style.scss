@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: 18px;
     line-height: 2em;
     overflow-x: hidden;
@@ -38,6 +38,10 @@ h2,
 i,
 .tm-text-white {
     color: white;
+}
+
+.tm-about-header>h2 {
+    color: #FF6887
 }
 
 .tm-link-gray {
@@ -86,7 +90,7 @@ i,
 }
 
 .tm-contact-info {
-    padding-top: 20px;
+    padding-top: 11%;
 }
 
 .tm-contact-header {
@@ -106,6 +110,15 @@ i,
     padding-left: 34px;
     padding-right: 34px;
     box-sizing: border-box;
+}
+
+.socials {
+    display: block;
+    text-align: center;
+    padding-bottom: 7%;
+    font-weight: bold;
+    color: white;
+    font-size: 1.7rem;
 }
 
 input,
@@ -148,25 +161,77 @@ textarea {
 }
 
 .tm-btn-submit {
-    background: none;
-    color: #040019;
-    font-size: 1.5rem;
-    border: 4px solid white;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    border-radius: 7px;
 }
 
 .tm-btn-submit:hover {
     color: #000000;
 }
 
+/*button styles */
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #FEF38D;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
 .tm-social-link {
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    // background-color: #FEC2CE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +257,10 @@ textarea {
 
 .tm-social-link:hover i.fa-solid {
     color: rgb(251, 240, 147);
+}
+
+.fa-users {
+    color: #FF6887;
 }
 
 .tm-flex {
